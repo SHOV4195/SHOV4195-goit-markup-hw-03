@@ -70,10 +70,7 @@ img {
    margin: 0;
 }
 
- /* 
- сітка із застосування flex-box
-  */
-  
+
 
 /* Common styles start */
 
@@ -239,9 +236,11 @@ img {
 /* Features */
 .features {
    display: flex;
+   justify-content: space-between;
 }
 .features .item {
    margin-right: 30px;
+   width: 270px;
 }
 .features .item:last-child {
    margin-right: 0;
@@ -381,6 +380,8 @@ img {
 .footer {
    background-color: #2F303A;
 }
+
+
 .footer-address {
    font-weight: 400;
    font-size: 14px;
