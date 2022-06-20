@@ -16,10 +16,13 @@
    --items: 4;
    --indent: 30px;
 }
-html {
+
+
+*,
+*::before,
+*::after {
    box-sizing: border-box;
 }
-
 
 body {
    font-family: var(--main-font), sans-serif;
@@ -445,11 +448,6 @@ img {
 
 
 
-/* *,
-*::before,
-*::after {
-   box-sizing: border-box;
-} */
 
 
 
