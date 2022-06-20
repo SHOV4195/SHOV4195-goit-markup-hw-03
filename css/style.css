@@ -17,13 +17,6 @@
    --indent: 30px;
 }
 
-
-*,
-*::before,
-*::after {
-   box-sizing: border-box;
-}
-
 body {
    font-family: var(--main-font), sans-serif;
    font-size: 14px;
@@ -31,15 +24,23 @@ body {
    color: var(--primary-black-color);
    background-color: var(--primary-white-color);
 }
+  
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
 
 /* reset */
 h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p {
-   margin-top: 0;
-   margin-bottom: 0;
+   margin: 0;
+
 }
 
 img {
@@ -48,9 +49,15 @@ img {
    height: auto;
 }
 
+address {
+
+}
 
 /* Common styles start */
-
+.section {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
 
 .container {
    width: 1230px;
@@ -60,9 +67,6 @@ img {
    padding-right: 15px;
 }
 
-.link {
-   text-decoration: none;
-}
 
 .list {
    list-style: none;
@@ -70,6 +74,9 @@ img {
    margin: 0;
 }
 
+.link {
+   text-decoration: none;
+}
 
 
 /* Common styles start */
@@ -147,8 +154,7 @@ img {
 }
 
 .aut-nav {
-   margin: auto;
-   margin-right: 0;
+   margin-left: auto;
    display: flex;
    align-items: center;
 }
@@ -160,6 +166,8 @@ img {
 
 
 .aut-nav .current {
+   padding-top: 32px;
+   padding-bottom: 32px;
 
    color: var(--upper-title-text);
    font-weight: 500;
@@ -177,12 +185,13 @@ img {
 .hero {
    background-color: #2F303A;
    text-align: center;
+   padding: 200px 0;
 }
 
 .hero-title {
+   margin: 0 auto;
    margin-bottom: 30px;
-   margin-top: 0px;
-
+   width: 696px;
    color: var(--primary-white-color);
    font-weight: 900;
    font-size: 44px;
@@ -194,10 +203,11 @@ img {
 
 
 /* Section */
-.section {
-   padding-top: 94px;
-   padding-bottom: 94px;
+
+.section-about {
+   padding-top: 0;
 }
+
 .section-features {
    padding-top: 89px;
 }
@@ -210,6 +220,7 @@ img {
 
 
 .section-title {
+   padding-top: 0;
    margin-top: 0px;
    margin-bottom: 50px;
    color: var(--title-text-color);
@@ -247,7 +258,7 @@ img {
 }
 
 .features .title {
-   margin-bottom: 15px;
+   margin-bottom: 10px;
    color: var(--primary-black-c);
    text-transform: uppercase;
    font-weight: 700;
@@ -256,13 +267,8 @@ img {
 }
 
 .features .text {
-   margin-bottom: 15px;
-
    color: var(--upper-title-text);
-   font-weight: 400;
-   font-size: 14px;
    line-height: 1.71;
-
 }
 /* About */
 
@@ -301,10 +307,10 @@ img {
    font-family: var(--main-font);
    color: var(--primary-white-color);
    background-color: var(--accent-color);
-
-   font-style: normal;
+font-size: 16px;
    font-weight: 700;
-   line-height: 1.87;
+   line-height: 1.88;
+   border: none;
    text-decoration: none;
    text-align: center;
    letter-spacing: 0.06em;
