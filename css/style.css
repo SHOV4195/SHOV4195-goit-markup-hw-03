@@ -60,7 +60,7 @@ address {
 }
 
 .container {
-   width: 1230px;
+   width: 1200px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 15px;
@@ -84,6 +84,9 @@ address {
 
 
 /* Header */
+.header {
+   border-bottom: 1px solid #ECECEC;
+}
 
 .header-container,
 .header-nav {
@@ -100,9 +103,6 @@ address {
 
 /* Logo */
 .logo {
-   display: flex;
-   align-items: center;
-
    font-family: var(--secondary-font), sans-serif;
    color: var(--accent-color);
 
@@ -247,7 +247,6 @@ address {
 /* Features */
 .features {
    display: flex;
-   justify-content: space-between;
 }
 .features .item {
    margin-right: 30px;
@@ -324,7 +323,6 @@ font-size: 16px;
 .filters-list {
    display: flex;
    margin-bottom: 50px;
-   border-radius: 4px;
    justify-content: center;
 }
 
@@ -364,7 +362,6 @@ font-size: 16px;
 /* User */
 
 .user-list .title {
-   margin-top: 30px;
    margin-bottom: 10px;
    color: var(--primary-black-color);
    font-weight: 500;
@@ -373,18 +370,21 @@ font-size: 16px;
    text-align: center;
 }
 .user-list .text {
-   margin-top: 10px;
-   padding-bottom: 15px;
    color: var(--upper-title-text);
    font-weight: 400;
    font-size: 16px;
    line-height: 1.18;
    text-align: center;
 }
+.user-list-text {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
 
 /* Footer */
 .footer {
    background-color: #2F303A;
+   padding: 60px 0;
 }
 
 .footer .logo {
@@ -392,14 +392,19 @@ font-size: 16px;
 }
 
 .footer-address {
-   display: flex;
-   flex-wrap: wrap;
-   padding-bottom:  60px;
-   align-items: center;
+   margin-top: 20px;
+   font-style: normal;
    font-weight: 400;
    font-size: 14px;
    line-height: 1.71;
 }
+
+.footer-address .item {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+}
+
 
 
 
@@ -433,7 +438,6 @@ font-size: 16px;
 .project {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
 }
 .project-list {
    width: 370px;
@@ -450,6 +454,7 @@ font-size: 16px;
 }
 
 .project-text {
+   margin-bottom: 4px;
    color: var(--primary-black-color);
    font-weight: 700;
    font-size: 18px;
@@ -460,6 +465,10 @@ font-size: 16px;
    color: var(--upper-title-text);
    font-weight: 400;
    line-height: 1.87;
+}
+.project-list-text {
+   padding: 20px 24px ;
+
 }
 
 
